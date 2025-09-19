@@ -11,6 +11,7 @@ import { store, persistor } from './src/store';
 import { Text, ActivityIndicator, View } from 'react-native';
 import DashboardScreen from './src/screens/Dashboard/DashboardScreen';
 import TransactionsScreen from './src/screens/Transactions/TransactionsScreen';
+import AddTransactionScreen from './src/screens/AddTransaction/AddTransactionScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -22,7 +23,7 @@ const LoadingScreen = () => (
 );
 
 function App(): React.JSX.Element {
-   return (
+  return (
     <Provider store={store}>
       <PersistGate loading={<LoadingScreen />} persistor={persistor}>
         <NavigationContainer>
@@ -30,7 +31,7 @@ function App(): React.JSX.Element {
             screenOptions={({ route }) => ({
               tabBarIcon: ({ focused, color, size }) => {
                 let iconName: string;
-                
+
                 switch (route.name) {
                   case 'Dashboard':
                     iconName = 'dashboard';
@@ -54,11 +55,12 @@ function App(): React.JSX.Element {
           >
             <Tab.Screen name="Dashboard" component={DashboardScreen} />
             <Tab.Screen name="Transactions" component={TransactionsScreen} />
+            <Tab.Screen name="Add" component={AddTransactionScreen} />
           </Tab.Navigator>
         </NavigationContainer>
       </PersistGate>
     </Provider>
-   );
+  );
 }
 
 export default App;
