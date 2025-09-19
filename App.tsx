@@ -23,7 +23,7 @@ const LoadingScreen = () => (
 );
 
 function App(): React.JSX.Element {
-  return (
+   return (
     <Provider store={store}>
       <PersistGate loading={<LoadingScreen />} persistor={persistor}>
         <NavigationContainer>
@@ -31,7 +31,7 @@ function App(): React.JSX.Element {
             screenOptions={({ route }) => ({
               tabBarIcon: ({ focused, color, size }) => {
                 let iconName: string;
-
+                
                 switch (route.name) {
                   case 'Dashboard':
                     iconName = 'dashboard';
@@ -60,7 +60,7 @@ function App(): React.JSX.Element {
         </NavigationContainer>
       </PersistGate>
     </Provider>
-  );
+   );
 }
 
 export default App;
