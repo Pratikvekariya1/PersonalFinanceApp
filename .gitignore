@@ -1,34 +1,113 @@
-# Gradle files
-.gradle/
-build/
+# OSX
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
 
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Log/OS Files
-*.log
-
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
-
-# IntelliJ
-*.iml
+# XDE
+.expo/
+.vscode/
 .idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
 
-# Keystore files
-*.jks
-*.keystore
+# VSCode
+.vscode/
+.history/
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+# Xcode
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
 
-# Android Profiling
+# Android/IntelliJ
+build/
+.idea/
+.gradle/
+local.properties
+*.iml
 *.hprof
+.cxx/
+*.keystore
+!debug.keystore
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# React Native
+ios/Pods/
+ios/build/
+android/app/build/
+android/build/
+android/.gradle/
+android/gradle/
+android/gradlew
+android/gradlew.bat
+
+# BUCK
+buck-out/
+\.buckd/
+*.keystore
+!debug.keystore
+
+# Bundle artifacts
+*.jsbundle
+main.jsbundle
+index.android.bundle
+index.ios.bundle
+
+# CocoaPods
+ios/Pods/
+
+# Fastlane
+ios/fastlane/report.xml
+ios/fastlane/Preview.html
+ios/fastlane/screenshots
+ios/fastlane/test_output
+
+# Metro
+.metro-health-check*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Env
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Flipper
+ios/Pods/Flipper/
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Lock files (optional - choose based on your preference)
+# package-lock.json
+# yarn.lock
