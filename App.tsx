@@ -10,6 +10,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import { store, persistor } from './src/store';
 import { Text, ActivityIndicator, View } from 'react-native';
 import DashboardScreen from './src/screens/Dashboard/DashboardScreen';
+import TransactionsScreen from './src/screens/Transactions/TransactionsScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -52,6 +53,7 @@ function App(): React.JSX.Element {
             })}
           >
             <Tab.Screen name="Dashboard" component={DashboardScreen} />
+            <Tab.Screen name="Transactions" component={TransactionsScreen} />
           </Tab.Navigator>
         </NavigationContainer>
       </PersistGate>
